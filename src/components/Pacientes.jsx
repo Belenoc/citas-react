@@ -8,7 +8,7 @@ const Pacientes = ({ paciente, setPaciente, eliminarPaciente }) => {
             eliminarPaciente(id)
         }
     };
-    
+
     return (
         <div className='mx-5 mb-10 bg-white shadow-md px-5 py-10 rounded-xl'>
             <p className=' font-bold mb-3 text-gray-700 uppercase'>
@@ -36,15 +36,15 @@ const Pacientes = ({ paciente, setPaciente, eliminarPaciente }) => {
                 <span className='font-normal normal-case'>{sintomas}</span>
             </p>
 
-            <div className="md:flex mx-5 w-1/2 ">
+            <div className="w-full">
                 <button type="button"
-                className="py-1 px-10 border-2 border-green-400  bg-white text-green-400 font-bold hover:bg-green-400 hover:text-white rounded-md mr-5 transition-all w-1/2"
-                onClick={() => setPaciente(paciente)}>
+                    className="py-1 px-10 border-2 border-green-400  bg-white text-green-400 font-bold hover:bg-green-400 hover:text-white rounded-md mr-5 transition-all w-40 mb-2"
+                    onClick={() => setPaciente(paciente)}>
                     Editar
                 </button>
                 <button type="button"
-                className="py-1 px-10 border-2 border-red-400  bg-white text-red-400 font-bold hover:bg-red-400 hover:text-white rounded-md  transition-all w-1/2"
-                onClick={handleDelete}>
+                    className="py-1 px-10 border-2 border-red-400  bg-white text-red-400 font-bold hover:bg-red-400 hover:text-white rounded-md  transition-all w-40"
+                    onClick={handleDelete}>
                     Eliminar
                 </button>
             </div>
